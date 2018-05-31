@@ -1,0 +1,81 @@
+
+ <div id="container" style="border-top:none;background-color:#ffffff;">
+  
+ 
+ 
+ 
+  &nbsp;<%= image_tag "dir.png",:style=>"float:left;width:200px;margin-top:3%;margin-left:3%;" %><br>
+  
+   <div id="box" style=" border-right:1px dashed 
+silver;  margin-left:25%;margin-top:3%;">
+<fieldset style="width:88%;text-align:center;"><legend style="float:left">
+Сперва &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</legend> <p style="text-align:center;">о способе 
+представления матерного материала.</p> <p style="text-align:center;">
+Oн рассчитан на определённое содействие со стороны
+
+пользователя данной базой данных, которая&mdash;ну, кто бы 
+сомневался!&mdash;составлена из трёх частей (по числу <span 
+id="span">w</span>-слов).</p>
+<%= image_tag "w-word.png",:style=>"float:left;width:340px;" %>
+
+<p> &nbsp;<br>&nbsp;&nbsp;Для входа в 
+искомую часть набираем её корневое слово<em> (там, чуть пониже, есть специальное окошечко)</em> --
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span 
+id="span">w0</span>, <span id="span">w1</span>, или <span 
+id="span">w2</span>...
+<br>(но, конечно ж, на руском)
+<p>
+<tt><b><i style="color:blue">(...чисто формальная проверка <br> 
+&mdash;на всякий!&mdash;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+лингвистической зрелости &nbsp;&nbsp;пользователя:</i></b></tt>  <%= image_tag "lock.png",:style=>"float:right" %></p>
+
+
+
+<%= form_tag('whereto') do -%>
+  <br>
+      <%= text_field_tag :name,nil,:placeholder=>'введите слово: w0, или w1, или w2 
+',:size=>27,:style=>"margin-left:32%" %>
+      <ul style="text-align:left;margin-left:86px;"><li>w0= сущ. жен. 
+р., ед. ч., им. п.</li><li>w1= сущ. муж. р., ед. ч., им. п.</li><li>w2= 
+глаг. неопр. фор., I спр. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em> (подробное определение<span id="span"> w-слов</span> смотри <span style="text-decoration:underline"> <%= link_to   "тут",home_path   %>)</span></em></li></ul>
+   
+      
+<p style="text-align:center">
+
+а после кликаем  вот эту кнопочку:<br>&nbsp;&nbsp;&nbsp;</p><p style="text-align:center">
+<%= button_tag "эх, прокачу!", class: "button" %>
+</p>
+<% end -%>
+<br>
+ 
+ </fieldset>
+
+
+
+<div class="roundbox" style="width:88%;float:left;margin-top: 5%;margin-left:-20%;margin-bottom:3%">
+<div class="roundlegend" 
+style="font-weight:bold;color:white;width:130px;margin-top:-28px; 
+margin-left:10px;text-align:center;background:#000000;">Ежели в 
+базе</div> 
+
+<p style="padding:15px;clear:left">вам встретилась вопиющая неточность, 
+или  у вас есть чем поделиться &ndash; милости просим!<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:ogoltsoff@gmail.com" style="text-align:center">Пишите</a>  <br>и вам ответится в течение трёх календарных дней.
+</p><p style="padding-left:15px;clear:left"> Интересные выражения будут 
+вставлены в саму базу, при условии их соответствия её тематике и 
+моральным устоям: 
+
+<ul style="text-align:left;margin-left:56px"><li> мир во всём мире, 
+</li><li>равенство, дружба и братство всех народов</li><li>вольному 
+&ndash; воля, спасённому &ndash; рай,</li><li> и т.д.</li></ul></p>
+<p 
+style=" color:#595;font-size:112%;text-align:center;position:relative; top:-60px;"><br>&nbsp;<br> 
+Удачи всем:<br> как начинающим, так и заматерелым<br> филологам с 
+филологиням, <br>и да пребудет с вами <span id="span">w2</span>ическая 
+сила. 
+</p>
+
+</div><br>&nbsp;
+</div><br>&nbsp;
+	</div>		
+

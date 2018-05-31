@@ -1,0 +1,42 @@
+ 
+<div id="container" style="min-height:600px;">
+<div class="push"></div> 
+<p style="float:left; margin-left:1%;"><%= link_to 'новый поиск', w2lookup_path, 
+:class=>'button' %></p>
+ 
+<h1 style="color:red;text-align:center; width:56%;margin-left:20%" id="shadow"><em>корневое слово w2 и выражения от него</em><br>&nbsp;</h1>
+ 
+<table  style="margin-right:1%;margin-left:1%;margin-top:3%" id="table">
+<tbody>
+  <thead>
+    <tr style="color:#c30808;text-align:center; border-bottom:1px dashed silver;">
+      <th> слово/выражение&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>его значение</th>
+       <th width="9%">синонимы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th width="5%">категория&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th width="43%">пояснение категории</th>
+      <th    > 
+примеры</th> 
+    </tr>
+    <tr ><th colspan=5></th></tr>
+  </thead>
+
+  <tbody>
+    <% @w2words.each do |w2word| %>
+      <tr class="<%= cycle('evenrow', 'oddrow') -%>">
+        <td><%= w2word.expression %></td>
+        <td><%= w2word.interpretation %></td>
+         
+         <td><%= w2word.synonym %></td>
+        <td><%= w2word.category %></td>
+        <td><%= w2word.category_definition %></td>
+        <td><%= link_to 'покажь!', w2word %></td>
+         
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+ 

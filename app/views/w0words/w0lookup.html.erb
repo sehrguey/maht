@@ -1,0 +1,39 @@
+ 
+<div id="container" style="margin-top:3%;background-image:url(<%= image_path "glass.png" %>);background-repeat: no-repeat;">
+
+<div   style="width:40%; float:right;margin-right:8%;margin-top:20px;clear:both;">
+<p><strong>Информация для удобства пользователей базой:</strong></p>
+Кнопка "покажь!" переносит к списку <strong>ВСЕХ</strong> выражений данного направления, откуда можно перейти к конкретным примерам их употребления</p>
+<p>Список можно ограничить, если вместо "вали всё, что есть!" вписать/вставить наименование какой-либо из матерных категорий.</p>
+<p style="width:453px;float:right; 
+height:170px;margin-right:13px;color:#c30808;display:inline;font-size:110%;font-weight:bold;text-align:center;">
+   
+ наименования матерных категорий:
+ <br>&nbsp;<br>прибаутки<br>прямосмыслы<br>смыслосмены<br>тех-подменки</p>
+ 
+ </div>
+ 
+ 
+<div style="width:60%; float:right;margin-right:10%;clear:both;">
+<%= form_tag(w0words_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "вали всё, что есть!" %>
+     
+    <%= submit_tag "покажь!", :name => nil %>
+<% end %>
+ <div style="font-size:130%;color:#silver; margin-left:60%">
+...или, может,
+<h4 style="text-decoration:underline"> <%= link_to   "сменить корневое
+слово?",crossroads_path   %><br>&nbsp;</h4>
+</div>
+ 
+
+ </div>
+</div>
+ 
+ 
+ 
+
+
+
+
+

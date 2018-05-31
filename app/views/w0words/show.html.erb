@@ -1,0 +1,34 @@
+<div id="container" style="min-height:544px;margin-top:3%">
+<div class="push"></div>
+<h5 style="color:brown" align="center"> примеры выражения <b>"<%= 
+@w0word.expression 
+%>":</b></h5>
+<div align="center">
+<h5 style="color:brown" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>пример 1.</i></h5>
+<p id="box" style="width:77%;border:1px dashed silver;text-align:left" >
+  <%= @w0word.usage_neutral %>
+</p>
+</div>
+
+<div class="push"></div>
+<div align="center">
+<h5 style="color:brown" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>пример 2.</i></h5>
+<p id="box" style="width:77%;border:1px dashed silver;text-align:left" >
+  <%= @w0word.usage_intense %>
+</p>
+</div>
+ 
+<div  class="polaroid rotate_right" 
+style="width:52%;float:left; margin-left:10%;margin-top:3%;color:#000066;" 
+ >
+
+  <b>категория:</b><h5 style="display:inline;">
+<%= @w0word.category  %>
+</h5>
+<p>
+  <%= @w0word.category_definition %>
+</p></div>
+<div class="push"></div>
+<div align="left" style="margin-bottom:3%;float:right;margin-right:20%">
+<%= link_to 'новый поиск', w0lookup_path,:class=>"button" %>
+</div>
